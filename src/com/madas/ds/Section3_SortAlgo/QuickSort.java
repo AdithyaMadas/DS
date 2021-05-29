@@ -62,12 +62,16 @@ public class QuickSort {
 
         while (i < j) {
 
+            //empty loop
             while (i < j && arr[--j] >= pivotElement) ;
+
             if (i < j) {
                 arr[i] = arr[j];
             }
 
+            //empty loop
             while (i < j && arr[++i] <= pivotElement) ;
+
             if (i < j) {
                 arr[j] = arr[i];
             }
